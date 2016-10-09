@@ -1,0 +1,17 @@
+public class FindMinMax{
+  public static void main (String [] args){
+    int[]array = {25, 27, 15, 100, 32};
+    
+    int min=Integer.MAX_VALUE;
+    int max=Integer.MIN_VALUE;
+    
+    for(int a=0; a<array.length; a++){
+      if(min > array[a])
+        min = array[a];
+      if(array[a] > max)
+        max = array[a];
+    }
+    System.out.println("Smallest number is " + min);
+    System.out.println("Largest number is " + max);
+  }
+}
